@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock, Paper, Scissor</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Rock, Paper, Scissor</h1>
+        <div class="choices">
+            <button value="rock" id="rock-btn" onclick="getPlayerChoice(value);game()">Rock</button>
+            <button value="paper" id="paper-btn" onclick="getPlayerChoice(value);game()">Paper</button>
+            <button value="scissor" id="scissor-btn" onclick="getPlayerChoice(value);game()">Scissor</button>
+        </div>
+        <div class="score" id="score">
+            <p><span id="playerChoice"></span></p>
+            <p><span id="compChoice"></span></p>
+            <p><span id="playerScore"></span></p>
+            <p><span id="compScore"></span></p>
+        </div>
+    </div>
+
+    <script src="gameLogic.js"></script>
+</body>
+
+</html>
